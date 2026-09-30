@@ -1,0 +1,2463 @@
+<!DOCTYPE html>
+<html lang="om">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mana Barumsa Sadarkaa 1ffaa Gadaa Qawweettii</title>
+
+    <style>
+
+        /* =========================
+           GENERAL
+        ========================= */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f5f7fa;
+            color: #222;
+            line-height: 1.7;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        img {
+            max-width: 100%;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+
+        /* =========================
+           TOP BAR
+        ========================= */
+
+        .topbar {
+            background: #062b52;
+            color: white;
+            padding: 8px 0;
+            font-size: 14px;
+        }
+
+        .topbar-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+
+        /* =========================
+           HEADER
+        ========================= */
+
+        header {
+            background: white;
+            position: sticky;
+            top: 0;
+            z-index: 999;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.10);
+        }
+
+        .header-content {
+            min-height: 80px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .logo {
+            width: 55px;
+            height: 55px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #087f3d, #064b85);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 21px;
+            font-weight: bold;
+        }
+
+        .brand h1 {
+            font-size: 19px;
+            color: #064b85;
+        }
+
+        .brand p {
+            color: #087f3d;
+            font-size: 12px;
+        }
+
+
+        /* =========================
+           NAVIGATION
+        ========================= */
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 5px;
+        }
+
+        nav ul li a {
+            display: block;
+            color: #222;
+            padding: 10px 12px;
+            font-size: 14px;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: .3s;
+        }
+
+        nav ul li a:hover,
+        nav ul li a.active {
+            color: white;
+            background: #087f3d;
+        }
+
+        .menu-btn {
+            display: none;
+            border: none;
+            background: none;
+            font-size: 30px;
+            color: #064b85;
+            cursor: pointer;
+        }
+
+
+        /* =========================
+           HERO
+        ========================= */
+
+        .hero {
+            min-height: 600px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            color: white;
+
+            background:
+                linear-gradient(
+                    rgba(3, 48, 85, .82),
+                    rgba(0, 105, 55, .78)
+                ),
+                linear-gradient(135deg, #064b85, #087f3d);
+        }
+
+        .hero-content {
+            width: 90%;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .hero-badge {
+            display: inline-block;
+            background: rgba(255,255,255,.15);
+            padding: 8px 18px;
+            border-radius: 30px;
+            margin-bottom: 20px;
+            border: 1px solid rgba(255,255,255,.3);
+        }
+
+        .hero h2 {
+            font-size: 52px;
+            line-height: 1.2;
+            margin-bottom: 20px;
+        }
+
+        .hero h2 span {
+            color: #ffd43b;
+        }
+
+        .hero p {
+            font-size: 19px;
+            max-width: 750px;
+            margin: 0 auto 30px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            border-radius: 6px;
+            margin: 5px;
+            font-weight: bold;
+            transition: .3s;
+        }
+
+        .btn-primary {
+            background: #ffd43b;
+            color: #222;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            background: white;
+        }
+
+        .btn-outline {
+            border: 2px solid white;
+            color: white;
+        }
+
+        .btn-outline:hover {
+            background: white;
+            color: #064b85;
+        }
+
+
+        /* =========================
+           SECTIONS
+        ========================= */
+
+        section {
+            padding: 80px 0;
+        }
+
+        .section-heading {
+            text-align: center;
+            margin-bottom: 45px;
+        }
+
+        .section-heading .small-title {
+            color: #087f3d;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+
+        .section-heading h2 {
+            font-size: 35px;
+            color: #064b85;
+            margin-bottom: 10px;
+        }
+
+        .section-heading p {
+            color: #666;
+        }
+
+
+        /* =========================
+           ABOUT
+        ========================= */
+
+        .about {
+            background: white;
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1.1fr .9fr;
+            gap: 50px;
+            align-items: center;
+        }
+
+        .about-text h3 {
+            color: #087f3d;
+            font-size: 28px;
+            margin-bottom: 15px;
+        }
+
+        .about-text p {
+            margin-bottom: 15px;
+            color: #555;
+        }
+
+        .about-card {
+            background: linear-gradient(135deg, #064b85, #087f3d);
+            color: white;
+            padding: 45px 30px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 15px 35px rgba(0,0,0,.15);
+        }
+
+        .about-card .icon {
+            font-size: 70px;
+            margin-bottom: 15px;
+        }
+
+
+        /* =========================
+           MISSION
+        ========================= */
+
+        .mission-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .mission-card {
+            background: white;
+            padding: 30px 25px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 5px 20px rgba(0,0,0,.07);
+            border-top: 4px solid #087f3d;
+            transition: .3s;
+        }
+
+        .mission-card:hover {
+            transform: translateY(-7px);
+        }
+
+        .mission-card .icon {
+            font-size: 45px;
+            margin-bottom: 10px;
+        }
+
+        .mission-card h3 {
+            color: #064b85;
+            margin-bottom: 10px;
+        }
+
+        .mission-card p {
+            color: #666;
+        }
+
+
+        /* =========================
+           STATS
+        ========================= */
+
+        .stats {
+            background: linear-gradient(135deg, #064b85, #087f3d);
+            color: white;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            gap: 25px;
+            text-align: center;
+        }
+
+        .stat {
+            padding: 15px;
+        }
+
+        .stat .icon {
+            font-size: 35px;
+        }
+
+        .stat h3 {
+            font-size: 42px;
+            color: #ffd43b;
+        }
+
+        .stat p {
+            font-size: 16px;
+        }
+
+
+        /* =========================
+           PROGRAMS
+        ========================= */
+
+        .programs {
+            background: #f5f7fa;
+        }
+
+        .program-grid {
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 25px;
+        }
+
+        .program-card {
+            background: white;
+            padding: 30px 25px;
+            border-radius: 12px;
+            box-shadow: 0 5px 18px rgba(0,0,0,.07);
+            transition: .3s;
+        }
+
+        .program-card:hover {
+            transform: translateY(-7px);
+            box-shadow: 0 12px 25px rgba(0,0,0,.12);
+        }
+
+        .program-icon {
+            width: 65px;
+            height: 65px;
+            border-radius: 10px;
+            background: #e7f5ed;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 35px;
+            margin-bottom: 18px;
+        }
+
+        .program-card h3 {
+            color: #064b85;
+            margin-bottom: 10px;
+        }
+
+        .program-card p {
+            color: #666;
+        }
+
+
+        /* =========================
+           TEACHERS
+        ========================= */
+
+        .teachers {
+            background: white;
+        }
+
+        .teacher-grid {
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 25px;
+        }
+
+        .teacher-card {
+            background: #f8fafc;
+            text-align: center;
+            padding: 30px;
+            border-radius: 12px;
+            border-bottom: 4px solid #087f3d;
+        }
+
+        .teacher-photo {
+            width: 100px;
+            height: 100px;
+            margin: 0 auto 15px;
+            border-radius: 50%;
+            background: linear-gradient(135deg,#064b85,#087f3d);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 45px;
+        }
+
+        .teacher-card h3 {
+            color: #064b85;
+        }
+
+        .teacher-card p {
+            color: #666;
+        }
+
+
+        /* =========================
+           NEWS
+        ========================= */
+
+        .news {
+            background: #eef4f8;
+        }
+
+        .news-grid {
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 25px;
+        }
+
+        .news-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 5px 18px rgba(0,0,0,.07);
+        }
+
+        .news-image {
+            height: 150px;
+            background: linear-gradient(135deg,#064b85,#087f3d);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 55px;
+        }
+
+        .news-body {
+            padding: 25px;
+        }
+
+        .date {
+            display: inline-block;
+            color: #087f3d;
+            font-size: 13px;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+
+        .news-body h3 {
+            color: #064b85;
+            margin-bottom: 10px;
+        }
+
+        .news-body p {
+            color: #666;
+        }
+
+
+        /* =========================
+           TIMETABLE
+        ========================= */
+
+        .timetable {
+            background: white;
+        }
+
+        .table-wrapper {
+            overflow-x: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            min-width: 700px;
+            background: white;
+        }
+
+        th,
+        td {
+            padding: 15px;
+            border: 1px solid #ddd;
+            text-align: center;
+        }
+
+        th {
+            background: #064b85;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background: #f5f7fa;
+        }
+
+
+        /* =========================
+           GALLERY
+        ========================= */
+
+        .gallery {
+            background: #f5f7fa;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            gap: 15px;
+        }
+
+        .gallery-item {
+            height: 190px;
+            border-radius: 10px;
+            overflow: hidden;
+            background: linear-gradient(135deg,#064b85,#087f3d);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 55px;
+            cursor: pointer;
+            transition: .3s;
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.04);
+        }
+
+
+        /* =========================
+           CONTACT
+        ========================= */
+
+        .contact {
+            background: white;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 35px;
+        }
+
+        .contact-info,
+        .contact-form {
+            background: #f5f7fa;
+            padding: 30px;
+            border-radius: 12px;
+        }
+
+        .contact-item {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 25px;
+        }
+
+        .contact-item .icon {
+            font-size: 27px;
+        }
+
+        .contact-item h4 {
+            color: #064b85;
+        }
+
+        .contact-item p {
+            color: #666;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        input,
+        textarea,
+        select {
+            width: 100%;
+            padding: 13px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            outline: none;
+            font-family: inherit;
+            font-size: 15px;
+        }
+
+        input:focus,
+        textarea:focus,
+        select:focus {
+            border-color: #087f3d;
+        }
+
+        textarea {
+            height: 130px;
+            resize: vertical;
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 13px;
+            border: none;
+            background: #087f3d;
+            color: white;
+            border-radius: 6px;
+            font-weight: bold;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .submit-btn:hover {
+            background: #064b85;
+        }
+
+
+        /* =========================
+           FOOTER
+        ========================= */
+
+        footer {
+            background: #071d2d;
+            color: white;
+            padding: 55px 0 20px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 35px;
+        }
+
+        footer h3 {
+            color: #ffd43b;
+            margin-bottom: 15px;
+        }
+
+        footer p,
+        footer li {
+            color: #c8d0d6;
+            font-size: 14px;
+        }
+
+        footer ul {
+            list-style: none;
+        }
+
+        footer li {
+            margin-bottom: 8px;
+        }
+
+        footer a {
+            color: #c8d0d6;
+        }
+
+        footer a:hover {
+            color: white;
+        }
+
+        .copyright {
+            border-top: 1px solid #334452;
+            padding-top: 20px;
+            text-align: center;
+            color: #9faab2;
+            font-size: 13px;
+        }
+
+
+        /* =========================
+           BACK TO TOP
+        ========================= */
+
+        #topButton {
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            width: 45px;
+            height: 45px;
+            border: none;
+            border-radius: 50%;
+            background: #087f3d;
+            color: white;
+            font-size: 20px;
+            cursor: pointer;
+            display: none;
+            z-index: 1000;
+        }
+
+
+        /* =========================
+           DARK MODE
+        ========================= */
+
+        body.dark {
+            background: #101820;
+            color: #eee;
+        }
+
+        body.dark header,
+        body.dark .about,
+        body.dark .teachers,
+        body.dark .contact,
+        body.dark .timetable {
+            background: #17232d;
+        }
+
+        body.dark .programs,
+        body.dark .gallery,
+        body.dark .news {
+            background: #101820;
+        }
+
+        body.dark .program-card,
+        body.dark .teacher-card,
+        body.dark .news-card,
+        body.dark .contact-info,
+        body.dark .contact-form,
+        body.dark .mission-card {
+            background: #1d2c38;
+            color: #eee;
+        }
+
+        body.dark .section-heading h2,
+        body.dark .about-text h3,
+        body.dark .program-card h3,
+        body.dark .teacher-card h3,
+        body.dark .news-body h3,
+        body.dark .mission-card h3,
+        body.dark .contact-item h4 {
+            color: #55c889;
+        }
+
+        body.dark p,
+        body.dark .program-card p,
+        body.dark .teacher-card p,
+        body.dark .news-body p,
+        body.dark .mission-card p,
+        body.dark .contact-item p {
+            color: #c8d0d6;
+        }
+
+        .dark-button {
+            position: fixed;
+            left: 20px;
+            bottom: 20px;
+            width: 45px;
+            height: 45px;
+            border: none;
+            border-radius: 50%;
+            background: #064b85;
+            color: white;
+            cursor: pointer;
+            font-size: 19px;
+            z-index: 1000;
+        }
+
+
+        /* =========================
+           RESPONSIVE
+        ========================= */
+
+        @media (max-width: 1000px) {
+
+            nav {
+                display: none;
+            }
+
+            .menu-btn {
+                display: block;
+            }
+
+            nav.mobile-open {
+                display: block;
+                position: absolute;
+                top: 80px;
+                left: 0;
+                width: 100%;
+                background: white;
+                box-shadow: 0 8px 15px rgba(0,0,0,.12);
+            }
+
+            nav.mobile-open ul {
+                flex-direction: column;
+                padding: 10px;
+            }
+
+            nav.mobile-open a {
+                color: #222;
+            }
+
+            .about-grid,
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .program-grid,
+            .news-grid,
+            .teacher-grid,
+            .mission-grid {
+                grid-template-columns: repeat(2,1fr);
+            }
+
+            .gallery-grid {
+                grid-template-columns: repeat(2,1fr);
+            }
+
+            .stats-grid {
+                grid-template-columns: repeat(2,1fr);
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+
+        }
+
+
+        @media (max-width: 600px) {
+
+            .topbar-content {
+                flex-direction: column;
+                gap: 3px;
+                text-align: center;
+            }
+
+            .brand h1 {
+                font-size: 15px;
+            }
+
+            .brand p {
+                font-size: 10px;
+            }
+
+            .logo {
+                width: 45px;
+                height: 45px;
+                font-size: 17px;
+            }
+
+            .hero {
+                min-height: 520px;
+            }
+
+            .hero h2 {
+                font-size: 34px;
+            }
+
+            .hero p {
+                font-size: 16px;
+            }
+
+            .section-heading h2 {
+                font-size: 28px;
+            }
+
+            .program-grid,
+            .news-grid,
+            .teacher-grid,
+            .mission-grid,
+            .stats-grid,
+            .gallery-grid,
+            .footer-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .gallery-item {
+                height: 220px;
+            }
+
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+
+<!-- =========================
+     TOP BAR
+========================= -->
+
+<div class="topbar">
+
+    <div class="container topbar-content">
+
+        <div>
+            📍 Gadaa Qawweettii, Oromiyaa, Itoophiyaa
+        </div>
+
+        <div>
+            📞 +251 9XX XXX XXXX
+            &nbsp; | &nbsp;
+            ✉️ info@example.com
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- =========================
+     HEADER
+========================= -->
+
+<header>
+
+    <div class="container header-content">
+
+        <div class="brand">
+
+            <div class="logo">
+                GQ
+            </div>
+
+            <div>
+
+                <h1>
+                    Mana Barumsa Sadarkaa 1ffaa
+                    Gadaa Qawweettii
+                </h1>
+
+                <p>
+                    Barnoota • Naamusa • Milkaa'ina
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <button
+            class="menu-btn"
+            onclick="toggleMenu()">
+            ☰
+        </button>
+
+
+        <nav id="nav">
+
+            <ul>
+
+                <li>
+                    <a href="#home">Mana</a>
+                </li>
+
+                <li>
+                    <a href="#about">Waa'ee Keenya</a>
+                </li>
+
+                <li>
+                    <a href="#mission">Kaayyoo</a>
+                </li>
+
+                <li>
+                    <a href="#programs">Barnoota</a>
+                </li>
+
+                <li>
+                    <a href="#teachers">Barsiisota</a>
+                </li>
+
+                <li>
+                    <a href="#news">Oduu</a>
+                </li>
+
+                <li>
+                    <a href="#gallery">Gallery</a>
+                </li>
+
+                <li>
+                    <a href="#contact">Nu Qunnamaa</a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+<!-- =========================
+     HERO
+========================= -->
+
+<section class="hero" id="home">
+
+    <div class="hero-content">
+
+        <div class="hero-badge">
+            🏫 Baga Nagaan Dhuftan
+        </div>
+
+        <h2>
+            Mana Barumsa Sadarkaa 1ffaa
+            <span>Gadaa Qawweettii</span>
+        </h2>
+
+        <p>
+            Barnoota qulqullina qabu kennuun,
+            dhaloota beekumsa, naamusa, kalaqa fi
+            itti-gaafatamummaa qabu ijaaruuf hojjenna.
+        </p>
+
+        <a href="#about" class="btn btn-primary">
+            Waa'ee Keenya
+        </a>
+
+        <a href="#contact" class="btn btn-outline">
+            Nu Qunnamaa
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     ABOUT
+========================= -->
+
+<section class="about" id="about">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <div class="small-title">
+                NU WALIIN BARADHU
+            </div>
+
+            <h2>
+                Waa'ee Mana Barumsaa Keenya
+            </h2>
+
+            <p>
+                Mana barumsaa dhaloota boruu qopheessu.
+            </p>
+
+        </div>
+
+
+        <div class="about-grid">
+
+            <div class="about-text">
+
+                <h3>
+                    Mana Barumsa Sadarkaa 1ffaa
+                    Gadaa Qawweettii
+                </h3>
+
+                <p>
+                    Mana Barumsa Sadarkaa 1ffaa Gadaa Qawweettii
+                    keessatti barattoota keenyaaf naannoo barnootaa
+                    mijataa fi barnoota qulqullina qabu kennuuf
+                    hojjenna.
+                </p>
+
+                <p>
+                    Barattoonni keenya beekumsa barnootaa qofa osoo
+                    hin taane naamusa, hojii garee, kalaqa,
+                    itti-gaafatamummaa fi jaalala hawaasaa akka
+                    qabaatan ni jajjabeessina.
+                </p>
+
+                <p>
+                    Barsiisota, maatii fi hawaasa waliin
+                    qindoomuun milkaa'ina barattootaa irratti
+                    xiyyeeffanna.
+                </p>
+
+            </div>
+
+
+            <div class="about-card">
+
+                <div class="icon">
+                    🎓
+                </div>
+
+                <h2>
+                    Barnoota Har'aa
+                </h2>
+
+                <p>
+                    Dhaloota beekumsa qabu,
+                    naamusa qabu fi egeree isaa ijaaru.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     MISSION
+========================= -->
+
+<section id="mission">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <div class="small-title">
+                KAAYYOO KEENYA
+            </div>
+
+            <h2>
+                Mul'ata, Ergama fi Duudhaa
+            </h2>
+
+            <p>
+                Hojii keenya hundaa keessatti
+                barattoota keenya giddu-galeessa godhanna.
+            </p>
+
+        </div>
+
+
+        <div class="mission-grid">
+
+            <div class="mission-card">
+
+                <div class="icon">🔭</div>
+
+                <h3>
+                    Mul'ata
+                </h3>
+
+                <p>
+                    Mana barumsaa barnoota qulqullina qabu,
+                    kalaqa fi naamusa gaarii irratti hundaa'e
+                    ta'uu.
+                </p>
+
+            </div>
+
+
+            <div class="mission-card">
+
+                <div class="icon">🎯</div>
+
+                <h3>
+                    Ergama
+                </h3>
+
+                <p>
+                    Barattoota beekumsa, dandeettii fi
+                    itti-gaafatamummaa qaban qopheessuu.
+                </p>
+
+            </div>
+
+
+            <div class="mission-card">
+
+                <div class="icon">🤝</div>
+
+                <h3>
+                    Duudhaa
+                </h3>
+
+                <p>
+                    Wal kabajuu, hojii garee, amanamummaa,
+                    haqaa fi jaalala barnootaa cimsuu.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     STATISTICS
+========================= -->
+
+<section class="stats">
+
+    <div class="container">
+
+        <div class="stats-grid">
+
+            <div class="stat">
+
+                <div class="icon">👨‍🎓</div>
+
+                <h3>500+</h3>
+
+                <p>
+                    Barattoota
+                </p>
+
+            </div>
+
+
+            <div class="stat">
+
+                <div class="icon">👩‍🏫</div>
+
+                <h3>30+</h3>
+
+                <p>
+                    Barsiisota
+                </p>
+
+            </div>
+
+
+            <div class="stat">
+
+                <div class="icon">📚</div>
+
+                <h3>20+</h3>
+
+                <p>
+                    Waggoota Tajaajilaa
+                </p>
+
+            </div>
+
+
+            <div class="stat">
+
+                <div class="icon">🏆</div>
+
+                <h3>100%</h3>
+
+                <p>
+                    Abdii Boruu
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     PROGRAMS
+========================= -->
+
+<section class="programs" id="programs">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <div class="small-title">
+                BARNOOTA
+            </div>
+
+            <h2>
+                Dameewwan Barnootaa
+            </h2>
+
+            <p>
+                Barattoonni keenya dandeettii isaanii
+                karaa adda addaatiin akka guddifatan ni deeggarra.
+            </p>
+
+        </div>
+
+
+        <div class="program-grid">
+
+
+            <div class="program-card">
+
+                <div class="program-icon">
+                    📖
+                </div>
+
+                <h3>
+                    Afaan Oromoo
+                </h3>
+
+                <p>
+                    Dubbisuu, barreessuu, dubbachuu fi
+                    hubannoo Afaan Oromoo cimsuu.
+                </p>
+
+            </div>
+
+
+            <div class="program-card">
+
+                <div class="program-icon">
+                    🔢
+                </div>
+
+                <h3>
+                    Herrega
+                </h3>
+
+                <p>
+                    Yaada herregaa fi rakkoo furuu
+                    barattootaa guddisuu.
+                </p>
+
+            </div>
+
+
+            <div class="program-card">
+
+                <div class="program-icon">
+                    🔬
+                </div>
+
+                <h3>
+                    Saayinsii
+                </h3>
+
+                <p>
+                    Qorannoo, yaalii fi hubannoo
+                    saayinsii uumuu.
+                </p>
+
+            </div>
+
+
+            <div class="program-card">
+
+                <div class="program-icon">
+                    🌍
+                </div>
+
+                <h3>
+                    Afaan Ingilizii
+                </h3>
+
+                <p>
+                    Dandeettii dubbisuu, barreessuu,
+                    dhaggeeffachuu fi dubbachuu guddisuu.
+                </p>
+
+            </div>
+
+
+            <div class="program-card">
+
+                <div class="program-icon">
+                    💻
+                </div>
+
+                <h3>
+                    Teknooloojii
+                </h3>
+
+                <p>
+                    Barattoonni teknooloojii ammayyaa
+                    akka beekanii fi itti fayyadaman gargaaruu.
+                </p>
+
+            </div>
+
+
+            <div class="program-card">
+
+                <div class="program-icon">
+                    ⚽
+                </div>
+
+                <h3>
+                    Ispoortii
+                </h3>
+
+                <p>
+                    Fayyaa qaamaa, hojii garee fi
+                    naamusa ispoortii cimsuu.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     TEACHERS
+========================= -->
+
+<section class="teachers" id="teachers">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <div class="small-title">
+                GAREE BARSIISOTAA
+            </div>
+
+            <h2>
+                Barsiisota Keenya
+            </h2>
+
+            <p>
+                Barsiisota barattoota deeggaran.
+            </p>
+
+        </div>
+
+
+        <div class="teacher-grid">
+
+
+            <div class="teacher-card">
+
+                <div class="teacher-photo">
+                    👨‍🏫
+                </div>
+
+                <h3>
+                    Barsiisaa 1
+                </h3>
+
+                <p>
+                    Afaan Oromoo
+                </p>
+
+            </div>
+
+
+            <div class="teacher-card">
+
+                <div class="teacher-photo">
+                    👩‍🏫
+                </div>
+
+                <h3>
+                    Barsiistuu 2
+                </h3>
+
+                <p>
+                    Herrega
+                </p>
+
+            </div>
+
+
+            <div class="teacher-card">
+
+                <div class="teacher-photo">
+                    👨‍🏫
+                </div>
+
+                <h3>
+                    Barsiisaa 3
+                </h3>
+
+                <p>
+                    Saayinsii
+                </p>
+
+            </div>
+
+
+            <div class="teacher-card">
+
+                <div class="teacher-photo">
+                    👩‍🏫
+                </div>
+
+                <h3>
+                    Barsiistuu 4
+                </h3>
+
+                <p>
+                    Afaan Ingilizii
+                </p>
+
+            </div>
+
+
+            <div class="teacher-card">
+
+                <div class="teacher-photo">
+                    👨‍🏫
+                </div>
+
+                <h3>
+                    Barsiisaa 5
+                </h3>
+
+                <p>
+                    Barnoota Hawaasaa
+                </p>
+
+            </div>
+
+
+            <div class="teacher-card">
+
+                <div class="teacher-photo">
+                    👩‍🏫
+                </div>
+
+                <h3>
+                    Barsiistuu 6
+                </h3>
+
+                <p>
+                    Art & Ispoortii
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     NEWS
+========================= -->
+
+<section class="news" id="news">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <div class="small-title">
+                ODUU FI BEEKSISA
+            </div>
+
+            <h2>
+                Oduu Haaraa
+            </h2>
+
+            <p>
+                Beeksisaalee fi odeeffannoo
+                mana barumsaa.
+            </p>
+
+        </div>
+
+
+        <div class="news-grid">
+
+
+            <div class="news-card">
+
+                <div class="news-image">
+                    📢
+                </div>
+
+                <div class="news-body">
+
+                    <span class="date">
+                        BEEKSISA
+                    </span>
+
+                    <h3>
+                        Galmee Barattootaa
+                    </h3>
+
+                    <p>
+                        Odeeffannoo galmee barattootaa
+                        waajjira mana barumsaa irraa
+                        argachuu dandeessu.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="news-card">
+
+                <div class="news-image">
+                    ⚽
+                </div>
+
+                <div class="news-body">
+
+                    <span class="date">
+                        SAGANTAA
+                    </span>
+
+                    <h3>
+                        Guyyaa Ispoortii
+                    </h3>
+
+                    <p>
+                        Sagantaan ispoortii barattootaa
+                        yeroo adda addaatti ni gaggeeffama.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="news-card">
+
+                <div class="news-image">
+                    👨‍👩‍👧
+                </div>
+
+                <div class="news-body">
+
+                    <span class="date">
+                        BEEKSISA
+                    </span>
+
+                    <h3>
+                        Walgahii Maatii
+                    </h3>
+
+                    <p>
+                        Maatiin barattootaa hojii mana
+                        barumsaa keessatti hirmaachuu ni danda'u.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     TIMETABLE
+========================= -->
+
+<section class="timetable">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <div class="small-title">
+                SAGANTAA
+            </div>
+
+            <h2>
+                Fakkeenya Sagantaa Barnootaa
+            </h2>
+
+        </div>
+
+
+        <div class="table-wrapper">
+
+            <table>
+
+                <tr>
+
+                    <th>
+                        Guyyaa
+                    </th>
+
+                    <th>
+                        2:30 - 3:30
+                    </th>
+
+                    <th>
+                        3:30 - 4:30
+                    </th>
+
+                    <th>
+                        4:30 - 5:30
+                    </th>
+
+                    <th>
+                        5:30 - 6:30
+                    </th>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Wiixata
+                    </td>
+
+                    <td>
+                        Afaan Oromoo
+                    </td>
+
+                    <td>
+                        Herrega
+                    </td>
+
+                    <td>
+                        Saayinsii
+                    </td>
+
+                    <td>
+                        Ispoortii
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Kibxata
+                    </td>
+
+                    <td>
+                        English
+                    </td>
+
+                    <td>
+                        Herrega
+                    </td>
+
+                    <td>
+                        Afaan Oromoo
+                    </td>
+
+                    <td>
+                        Art
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Roobii
+                    </td>
+
+                    <td>
+                        Saayinsii
+                    </td>
+
+                    <td>
+                        English
+                    </td>
+
+                    <td>
+                        Herrega
+                    </td>
+
+                    <td>
+                        Ispoortii
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Kamisa
+                    </td>
+
+                    <td>
+                        Afaan Oromoo
+                    </td>
+
+                    <td>
+                        Saayinsii
+                    </td>
+
+                    <td>
+                        English
+                    </td>
+
+                    <td>
+                        Teknooloojii
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Jimaata
+                    </td>
+
+                    <td>
+                        Herrega
+                    </td>
+
+                    <td>
+                        Afaan Oromoo
+                    </td>
+
+                    <td>
+                        Hawaasummaa
+                    </td>
+
+                    <td>
+                        Ispoortii
+                    </td>
+
+                </tr>
+
+            </table>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     GALLERY
+========================= -->
+
+<section class="gallery" id="gallery">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <div class="small-title">
+                GALLERY
+            </div>
+
+            <h2>
+                Suuraalee Mana Barumsaa
+            </h2>
+
+            <p>
+                Asitti booda suuraalee dhugaa mana
+                barumsaa kee galchuu dandeessa.
+            </p>
+
+        </div>
+
+
+        <div class="gallery-grid">
+
+            <div class="gallery-item">
+                🏫
+            </div>
+
+            <div class="gallery-item">
+                👨‍🎓
+            </div>
+
+            <div class="gallery-item">
+                👩‍🎓
+            </div>
+
+            <div class="gallery-item">
+                📚
+            </div>
+
+            <div class="gallery-item">
+                ⚽
+            </div>
+
+            <div class="gallery-item">
+                🔬
+            </div>
+
+            <div class="gallery-item">
+                🎨
+            </div>
+
+            <div class="gallery-item">
+                🌳
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     CONTACT
+========================= -->
+
+<section class="contact" id="contact">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <div class="small-title">
+                NU QUNNAMAA
+            </div>
+
+            <h2>
+                Nu Waliin Qunnamaa
+            </h2>
+
+            <p>
+                Gaaffii, yaada ykn odeeffannoo dabalataa
+                yoo barbaaddan nu qunnamaa.
+            </p>
+
+        </div>
+
+
+        <div class="contact-grid">
+
+
+            <div class="contact-info">
+
+
+                <div class="contact-item">
+
+                    <div class="icon">
+                        📍
+                    </div>
+
+                    <div>
+
+                        <h4>
+                            Teessoo
+                        </h4>
+
+                        <p>
+                            Gadaa Qawweettii,
+                            Oromiyaa, Itoophiyaa
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="contact-item">
+
+                    <div class="icon">
+                        📞
+                    </div>
+
+                    <div>
+
+                        <h4>
+                            Bilbila
+                        </h4>
+
+                        <p>
+                            +251 9XX XXX XXXX
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="contact-item">
+
+                    <div class="icon">
+                        ✉️
+                    </div>
+
+                    <div>
+
+                        <h4>
+                            Email
+                        </h4>
+
+                        <p>
+                            info@example.com
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="contact-item">
+
+                    <div class="icon">
+                        🕐
+                    </div>
+
+                    <div>
+
+                        <h4>
+                            Sa'aatii Hojii
+                        </h4>
+
+                        <p>
+                            Wiixata - Jimaata
+                        </p>
+
+                        <p>
+                            2:30 - 11:30
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+            <div class="contact-form">
+
+                <form onsubmit="sendMessage(event)">
+
+                    <div class="form-group">
+
+                        <input
+                            type="text"
+                            id="name"
+                            placeholder="Maqaa keessan"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <input
+                            type="email"
+                            id="email"
+                            placeholder="Email keessan"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <select id="reason" required>
+
+                            <option value="">
+                                Maaliif nu qunnamtu?
+                            </option>
+
+                            <option>
+                                Odeeffannoo Mana Barumsaa
+                            </option>
+
+                            <option>
+                                Galmee Barattootaa
+                            </option>
+
+                            <option>
+                                Gaaffii Barsiisotaa
+                            </option>
+
+                            <option>
+                                Yaada
+                            </option>
+
+                            <option>
+                                Kan Biroo
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <textarea
+                            id="message"
+                            placeholder="Ergaa keessan barreessaa..."
+                            required
+                        ></textarea>
+
+                    </div>
+
+
+                    <button
+                        type="submit"
+                        class="submit-btn">
+
+                        Ergaa Ergi
+
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer>
+
+    <div class="container">
+
+        <div class="footer-grid">
+
+
+            <div>
+
+                <h3>
+                    Mana Barumsa Sadarkaa 1ffaa
+                    Gadaa Qawweettii
+                </h3>
+
+                <p>
+                    Barnoota qulqullina qabu kennuun
+                    dhaloota beekumsa, naamusa, kalaqa
+                    fi itti-gaafatamummaa qabu ijaaruuf
+                    hojjenna.
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <h3>
+                    Links
+                </h3>
+
+                <ul>
+
+                    <li>
+                        <a href="#home">
+                            Mana
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#about">
+                            Waa'ee Keenya
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#programs">
+                            Barnoota
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#news">
+                            Oduu
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <div>
+
+                <h3>
+                    Odeeffannoo
+                </h3>
+
+                <ul>
+
+                    <li>
+                        📍 Gadaa Qawweettii
+                    </li>
+
+                    <li>
+                        📞 +251 9XX XXX XXXX
+                    </li>
+
+                    <li>
+                        ✉️ info@example.com
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+        </div>
+
+
+        <div class="copyright">
+
+            ©
+            <span id="year"></span>
+
+            Mana Barumsa Sadarkaa 1ffaa
+            Gadaa Qawweettii.
+
+            Mirgi hundi seeraan eegama.
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<!-- DARK MODE BUTTON -->
+
+<button
+    class="dark-button"
+    onclick="toggleDarkMode()"
+    title="Dark Mode">
+
+    🌙
+
+</button>
+
+
+<!-- BACK TO TOP -->
+
+<button
+    id="topButton"
+    onclick="goTop()">
+
+    ↑
+
+</button>
+
+
+<script>
+
+    /* =========================
+       MOBILE MENU
+    ========================= */
+
+    function toggleMenu() {
+
+        const nav = document.getElementById("nav");
+
+        nav.classList.toggle("mobile-open");
+
+    }
+
+
+    /* =========================
+       CLOSE MOBILE MENU
+    ========================= */
+
+    document.querySelectorAll("#nav a").forEach(function(link) {
+
+        link.addEventListener("click", function() {
+
+            document
+                .getElementById("nav")
+                .classList
+                .remove("mobile-open");
+
+        });
+
+    });
+
+
+    /* =========================
+       CONTACT FORM
+    ========================= */
+
+    function sendMessage(event) {
+
+        event.preventDefault();
+
+        const name =
+            document.getElementById("name").value;
+
+        alert(
+            "Galatoomi " +
+            name +
+            "! Ergaan keessan fudhatameera."
+        );
+
+        event.target.reset();
+
+    }
+
+
+    /* =========================
+       CURRENT YEAR
+    ========================= */
+
+    document.getElementById("year").textContent =
+        new Date().getFullYear();
+
+
+    /* =========================
+       BACK TO TOP
+    ========================= */
+
+    const topButton =
+        document.getElementById("topButton");
+
+
+    window.addEventListener("scroll", function() {
+
+        if (
+            document.documentElement.scrollTop > 400
+        ) {
+
+            topButton.style.display = "block";
+
+        } else {
+
+            topButton.style.display = "none";
+
+        }
+
+    });
+
+
+    function goTop() {
+
+        window.scrollTo({
+
+            top: 0,
+
+            behavior: "smooth"
+
+        });
+
+    }
+
+
+    /* =========================
+       DARK MODE
+    ========================= */
+
+    function toggleDarkMode() {
+
+        document
+            .body
+            .classList
+            .toggle("dark");
+
+    }
+
+
+    /* =========================
+       ACTIVE NAVIGATION
+    ========================= */
+
+    const sections =
+        document.querySelectorAll("section");
+
+    const navLinks =
+        document.querySelectorAll("#nav a");
+
+
+    window.addEventListener("scroll", function() {
+
+        let current = "";
+
+        sections.forEach(function(section) {
+
+            const sectionTop =
+                section.offsetTop - 150;
+
+            if (
+                pageYOffset >= sectionTop
+            ) {
+
+                current = section.getAttribute("id");
+
+            }
+
+        });
+
+
+        navLinks.forEach(function(link) {
+
+            link.classList.remove("active");
+
+            if (
+                link.getAttribute("href") ===
+                "#" + current
+            ) {
+
+                link.classList.add("active");
+
+            }
+
+        });
+
+    });
+
+</script>
+
+
+</body>
+</html>
